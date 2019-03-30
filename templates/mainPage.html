@@ -28,6 +28,9 @@
         {% if login %}
         <div class="wellcome container-fluid">
             <h1>Wellcome..</h1>
+            {% if sn: %}
+            <h2>Succes send to {{sn}}</h2>
+            {% endif %}
         </div>
         
         <form method="POST" action="/send" class="row">

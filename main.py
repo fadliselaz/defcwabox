@@ -25,6 +25,7 @@ def index():
 
 @app.route("/send", methods=["GET","POST"])
 def send():
+    sn = ""
     if request.method == "POST":
         #grab from from
         waNumber = request.form.get("waNumber")
@@ -35,11 +36,12 @@ def send():
         title = request.form.get("title")
 
         print(waNumber, message, contact, urlLink, UrlImage, title)
-        return "berhasil"
-    return "ya berhasil"
+        sn = contact
+        return render_template("mainPage.html", sn=sn, login=True)
 
-def alert():
-    return "masuk sini"
+    return render_template("mainPage.html")
+
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=8080)
