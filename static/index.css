@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(223, 255, 213);
+    font-family: 'Comfortaa', cursive;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+
+.navbar h1 {
+    padding:5px;
+    margin-left: 20px;
+    color: white;
+    
+}
+
+.navbar {
+    background-color: green;
+    color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+.formLogin {
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.formSend {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.form-control {
+    width: 50vh;
+}
+.imageRight {
+    background-image: url("https://images.pexels.com/photos/1471752/pexels-photo-1471752.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: 1000px;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.row {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wellcome{
+    text-align: center;
+    padding: 10px;
+}
